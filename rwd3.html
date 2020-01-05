@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RWD</title>
+  <style>
+  	html{
+  		font-size: 10px;
+  	}
+  	body{
+  		margin:0px auto;
+  		font-family:'微軟正黑體';
+  		max-width:1024px;
+  		min-width:420px;
+  	}
+  	ul,li,h1,h2,h3,h4,h5,h6,p{
+  		margin: 0;
+  		list-style: none;
+  		padding: 0;
+  		font-weight: normal;
+  	}
+  	#LOGO{
+  		padding: 10px 0px 10px 30px;
+
+  	}
+  	#navbar{
+  		width: 100%;
+  		background-color: #09b6a4;
+		border-bottom: 4px #fbcc10 solid;
+  	}
+  	#navbar ul{
+  		display: block;
+  		float: 	right;
+  		padding: 50px 20px 0 0;	
+  	}
+  	#navbar ul li{
+  		display:block;
+  		float: 	left;
+  		margin-left: 20px;	
+  		font-size: 1.8rem;	
+  	}
+  	#navbar ul li a{
+  		text-decoration: none;	
+  		color: 	#fff;
+  		font-size: 1.6rem;	
+  	}
+  	#menuIcon{
+  		display:none;
+  		float: 	right;
+  		padding: 0px 20px 0 0;	
+  	}
+	.cle{
+		clear:both;
+	}
+	#content{
+  		width: 100%;	
+  		background-color: #7e6b5a;
+  		color: #fff;
+  		padding: 30px 0;	
+  	}
+  	#introduction{
+  		width: 95%;	
+  		margin: 0 auto;	
+  	}
+  	#introduction h3{
+		font-size: 2.5rem;	
+  	}
+	#introduction p{
+		font-size: 1.6rem;	
+		text-indent: 2em;	 /*第一行縮排*/
+		text-align: justify; /*左右對齊*/
+		margin: 5px 0;	     /*段落間距*/
+	}
+	.designer{
+		float:left;
+		width: 25%;	
+		text-align: center;	
+		margin-top: 1rem;	
+	}
+	.designer h4{
+		font-size: 1.6rem;	
+	}
+	#banner{
+		position: relative;	
+		text-align: center;
+		color:#fff;	
+	}
+	#banner img{
+		width: 100%;	
+		position: absolute;	
+		left: 0;	
+		top: 0;	
+		z-index: -10;
+	}
+	#banner h1{
+		padding-top: 60px;	
+		font-size: 4.5rem;	
+	}
+	#banner h4{
+		padding-top: 20px;	
+		padding-bottom: 30px;	
+		display:block;
+		width: 22em;
+		font-size: 1.8rem;	
+		margin: 0 auto;	
+	}
+	.button{
+		border:1px solid #fff;
+		width: 8em;	
+		text-align: center;	
+		line-height: 2em;	
+		border-radius:5px;
+		margin: 0 auto;	
+		color:#fff;
+		font-size: 1.8em;	
+		cursor:pointer;
+	}
+	@media screen and (max-width:768px) {
+		#banner h1{
+			padding-top: 30px;	
+			font-size: 3.6rem;	
+		}
+		#banner h4{
+			padding-top: 10px;	
+			font-size: 1.5rem;	
+			line-height: 1.6em;	
+			padding-bottom: 20px;	
+		}
+		.btton{
+			width: 6em;	
+			line-height: 1.5em;	
+			font-size: 1.5em;	
+			padding-bottom: 20px;
+		}
+  		#navbar ul{
+  			display: none;
+  			float: none;	
+  			padding: 10px;	
+  			margin-bottom: 30px;		
+  		}
+  		#menuIcon{
+  			display: block;	
+  			float: right;	
+  			margin: 30px 20px 0 0;	
+  			cursor:pointer;
+  		}
+  		#introduction{
+			width: 35%;	
+			float:left;
+			margin-left: 5%;	
+		}
+		#designers{
+			width: 60%;	
+			float:left;
+			padding-top: 40px;	
+		}
+		.designer{
+			width: 50%;	
+			margin-bottom: 20px;
+			margin-top: 0;	
+		}
+  	}
+  	@media screen  and  (max-width:481px){
+  		#banner h1{
+  			padding-top: 20px;	
+  			font-size: 2.8rem;	
+  		}
+  		#banner h4{
+  			padding-top: 10px;	
+  			font-size: 1.4rem;	
+  			line-height: 1.4em;	
+  			padding-bottom: 20px;	
+  		}
+  		#navbar ul{
+  			display: none;
+  			float: none;
+  			padding: 0px;	
+  		}
+  		#navbar ul li{
+  			display:block;
+  			width: 100%;	
+  			float:none;
+  			line-height: 2.5rem;	
+  			margin: 0;	
+  			padding-left: 6%;	
+  		}
+  		#menuIcon{
+  			display: block;	
+  			float: right;	
+  			margin: 30px 20px 0 0;	
+  			cursor:pointer;
+  		}
+  		#introduction{
+			width: 95%;
+			float:none;
+			margin: 0px auto;	
+		}
+		#designers{
+			width: 95%;	
+			float: none;	
+			margin: 0 auto;	
+		}
+		.designer{
+			width: 100%;	
+			text-align: left;
+			margin-bottom: 2rem;	
+		}
+		.designer img{
+			float:left;
+			margin-right: 2rem;	
+		}
+  	}
+  </style>
+  	
+</head>
+<body>
+	
+	<div id="navbar">
+		<img src="images/logo_klcivs.png" id="LOGO">
+		<div id="menuIcon"><img src="images/menuIcon.png" alt=""></div>
+		<ul>
+			<li><a href="#">首頁</a></li>
+			<li><a href="#">廣告設計</a></li>
+			<li><a href="#">多媒體製作</a></li>
+			<li><a href="#">網頁設計</a></li>
+			<li><a href="#">創意企劃</a></li>
+		</ul>
+		<div class="cle"></div>
+	</div>
+	
+	<div id="banner">
+		<h1>驚訝原理數量可是並不是這。</h1>
+		<h4>手段來看那麼多語文還沒裝飾回答手冊一下日本老人領域，四個重大文明負責檢驗文化實業大力紡織人類可能製作頻道定義跟我，大家。</h4>
+		<div class="button">加入我們</div>
+		<img src="images/banner.png" id="banner_img">
+		<!-- <div class="cle"></div> -->
+	</div>
+
+	<div id="content">
+		<div id="introduction">
+			<h3>設計師團隊</h3>
+			<p>大幅進行房價在線本來竟然我都英雄歐美意，站在一副很久要有研究所唱片你看例，整理一場就能就能你看你想一部分提交，最多顯示器海外僅供英語瀏覽次數，進程令人一番瀏覽材料水晶三星執行思維目的增，旅遊。</p>
+			<p>我都神經趨勢成熟本次過來因為絶不制度獲得物業，先進性教育這一點當地無數下載，做好像素足夠研發可能材料都有以及一道照，大哥點評寫作貢獻我和結構，各地女孩隨意一對外資，然而進去協議還能但他賓館外觀你就第一成都網通次數，程序我想試試力量拿出上面工作人員會員價檔案不夠溝通不是至，遭遇錄入廣東採訪人大常委會。</p>
+		</div>
+		<div id="designers">
+			<div class="designer">
+				<img src="https://picsum.photos/150/150/?random=1">
+				<h4>這時事項</h4>
+				<h4>永遠中有</h4>
+			</div>
+			<div class="designer">
+				<img src="https://picsum.photos/150/150/?random=2">
+				<h4>調整律師</h4>
+				<h4>用戶名共</h4>
+			</div>
+			<div class="designer">
+				<img src="https://picsum.photos/150/150/?random=3">
+				<h4>資源類別</h4>
+				<h4>交換語言</h4>
+			</div>
+			<div class="designer">
+				<img src="https://picsum.photos/150/150/?random=4">
+				<h4>宣佈你知</h4>
+				<h4>成為互聯</h4>
+			</div>
+		</div>
+		<div class="cle"></div>
+	</div>
+
+
+ 	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+		$('#banner').height($('#banner').width()*0.426);
+		$('#menuIcon,#navbar ul li').click(function(){
+			if($('#menuIcon').is(":visible")){
+				$('#navbar ul').toggle(500);
+			}
+		})
+	})
+	$(window).resize(function() {
+		$("#banner").height($("#banner_img").height());
+		if (!$("#navbar ul").is(":visible")) {
+			$('#navbar ul').css('display','')
+         
+    	};
+	});
+
+	// $('#navbar ul').attr('style', function(i, style){
+ //             return style.replace(/display[^;]+;?/g, ''); });
+    
+</script>
+
+</body>
+</html>
